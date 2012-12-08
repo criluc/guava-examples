@@ -1,13 +1,15 @@
 package com.tfnico.examples.guava.base;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import java.util.Collections;
 import java.util.Map;
 
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
-import com.google.common.base.*;
+import com.google.common.base.Optional;
 import com.google.common.collect.Maps;
 
 public class OptionalTest {
