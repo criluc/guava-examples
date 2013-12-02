@@ -13,9 +13,11 @@ import com.google.common.collect.Ordering;
 import com.google.common.primitives.Ints;
 
 public class OrderingTest {
-    List<Integer> nums;
+    
+	List<Integer> nums;
     List<String> strings;
-   private static Ordering<String> byLength;
+    
+    private static Ordering<String> byLength;
 
     @Before
     public void setUp() {
