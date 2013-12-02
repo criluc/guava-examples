@@ -2,12 +2,8 @@ package com.tfnico.examples.guava;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.junit.Test;
 
-import com.google.common.collect.Constraints;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;
 
@@ -28,17 +24,6 @@ public class CollectionTest {
 
         assertEquals(ImmutableSet.of(stephen),
                 Sets.intersection(customers1, customers2));
-    }
-
-    @Test(expected = NullPointerException.class)
-    public void someConstraints() {
-        HashSet<Customer> customers = Sets.newHashSet(); // instead of new
-                                                         // HashSet<Customer>()
-        customers.add(null); // this works. But should it?
-
-        Set<Customer> noMoreNulls = Constraints.constrainedSet(customers,
-                Constraints.notNull());
-        noMoreNulls.add(null); // boom!
     }
 
     @Test
